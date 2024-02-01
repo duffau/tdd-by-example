@@ -11,6 +11,7 @@ public class MoneyTest {
     @Test
     void testEquality() {
         assertTrue(Money.dollar(5).equals(Money.dollar(5)));
+        assertFalse(Money.dollar(5).equals(Money.dollar(6)));
     }
 
     
@@ -21,3 +22,4 @@ public class MoneyTest {
     }
     
 }
+s
