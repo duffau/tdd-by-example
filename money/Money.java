@@ -1,4 +1,6 @@
-interface Expression {}
+interface Expression {
+    Money reduce(String to);
+}
 
 public class Money implements Expression {
     public int amount;
