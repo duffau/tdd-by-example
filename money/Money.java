@@ -10,7 +10,8 @@ public class Money implements Expression {
     }
     
     public String toString() {
-        return "Money(" + amount + ", " + currency +")";    
+        String className = this.getClass().getSimpleName();
+        return className + "(" + amount + ", " + currency +")";    
     }
     
     String currency() {
