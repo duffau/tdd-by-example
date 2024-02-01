@@ -9,6 +9,10 @@ public class Money implements Expression {
         this.currency = currency;
     }
     
+    String toString() {
+        return "Money(" + amount + ", " + currency +")";    
+    }
+    
     String currency() {
         return currency;
     }
