@@ -9,7 +9,7 @@ public class Money implements Expression {
         this.currency = currency;
     }
     
-    String toString() {
+    public String toString() {
         return "Money(" + amount + ", " + currency +")";    
     }
     
