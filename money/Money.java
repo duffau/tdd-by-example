@@ -1,7 +1,7 @@
 interface Expression {}
 
 public class Money implements Expression {
-    private int amount;
+    public int amount;
     private String currency;
     
     public Money(int amount, String currency) {
