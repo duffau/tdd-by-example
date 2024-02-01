@@ -1,5 +1,6 @@
+interface Expression;
 
-public class Money {
+public class Money implements Expression {
     private int amount;
     private String currency;
     
@@ -29,10 +30,14 @@ public class Money {
         return new Money(amount * multiplier, currency);
     }
     
-    Money plus(Money addend) {
+    Expression plus(Money addend) {
         return new Money(amount + addend.amount, currency);
     }
     
-    
 }
 
+public class Bank {
+    Money reduce(Expression source, String to) {
+        return null;
+    }
+}   
