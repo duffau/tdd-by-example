@@ -4,11 +4,11 @@ public class Money {
     private String currency;
     
     static Money dollar(int amount) {
-        return new Money(amount, "USD")
+        return new Money(amount, "USD");
     }
     
     static Money franc(int amount) {
-        return new Money(amount, "CHF")
+        return new Money(amount, "CHF");
     }
     
     Money times(int multiplier) {
