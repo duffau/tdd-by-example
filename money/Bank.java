@@ -1,4 +1,6 @@
 public class Bank {    
+    private class Pair{}
+    
     Money reduce(Expression source, String to) {
         return source.reduce(this, to);
     }
@@ -13,4 +15,3 @@ public class Bank {
     }
 }   
 
-private class Pair{}
