@@ -18,7 +18,7 @@ public class Bank {
         } 
     }
     
-    private HashTable rates = new HashTable(); 
+    private Hashtable rates = new Hashtable(); 
     
     Money reduce(Expression source, String to) {
         return source.reduce(this, to);
