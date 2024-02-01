@@ -21,5 +21,11 @@ public class MoneyTest {
         Money five = Money.dollar(5);
         assertEquals(Money.dollar(5), Money.dollar(5));
     }
+
+    @Test
+    void testSimpleAddition() {
+        Money sum = Money.dollar(5).plus(Money.dollar(5));
+        assertEquals(Money.dollar(10, sum));
+    }
     
 }
