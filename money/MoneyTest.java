@@ -69,7 +69,7 @@ public class MoneyTest {
     }
     
     @Test
-    void testMixedAddition {
+    void testMixedAddition() {
         Expression fivebucks = Money.dollar(5);
         Expression tenFrancs = Money.franc(10);
         Bank bank = new Bank();
