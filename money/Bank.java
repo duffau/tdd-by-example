@@ -1,3 +1,5 @@
+import java.util.Hashtable;
+
 public class Bank {    
     private class Pair{
         private String from;
