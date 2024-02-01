@@ -7,7 +7,7 @@ public class Bank {
     }
     
     int rate(String from, String to) {
-        return (currency.equals("CHF") && to.equals("USD"))
+        return (from.equals("CHF") && to.equals("USD"))
             ?2
             :1;
     }
