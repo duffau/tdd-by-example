@@ -1,4 +1,4 @@
-interface Expression;
+interface Expression
 
 public class Money implements Expression {
     private int amount;
