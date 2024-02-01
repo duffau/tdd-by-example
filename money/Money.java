@@ -14,7 +14,7 @@ public class Money {
     
     public boolean equals(Object object) {
         Money money = (Money) object;
-        return amount == money.amount && currency() == money.currency();
+        return amount == money.amount && currency().equals(money.currency());
     }
     
     static Money dollar(int amount) {
