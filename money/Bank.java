@@ -27,7 +27,7 @@ public class Bank {
     }
     
     void addRate(String from, String to, int rate){
-        rates.put(new Pair(from, to), new Integer(rate));
+        rates.put(new Pair(from, to), rate.valueOf());
     }
     
     int rate(String from, String to) {
