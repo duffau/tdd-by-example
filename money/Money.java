@@ -8,6 +8,15 @@ public class Money {
         currency = currency;
     }
     
+    String currency() {
+        return currency;
+    }
+    
+    public equals(Object object) {
+        Money money = (Money) object;
+        return amount == money.amount && currency() == money.currency();
+    }
+    
     static Money dollar(int amount) {
         return new Money(amount, "USD");
     }
