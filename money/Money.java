@@ -4,8 +4,8 @@ public class Money {
     private String currency;
     
     public Money(int amount, String currency) {
-        amount = amount;
-        currency = currency;
+        this.amount = amount;
+        this.currency = currency;
     }
     
     String currency() {
