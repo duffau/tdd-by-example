@@ -13,3 +13,4 @@ public class Bank {
     }
 }   
 
+private class Pair{}
