@@ -41,7 +41,7 @@ public class MoneyTest {
     }
     
     @Test
-    void testSimpleAddition() {
+    void testReduceSum() {
         Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
         Bank bank = new Bank();
         Money result = bank.reduce(sum, "USD");
