@@ -32,7 +32,7 @@ public class MoneyTest {
     }
     
     @Test
-    void testPlusReturnsSum {
+    void testPlusReturnsSum() {
         Money five = Money.dollar(5);
         Expression result = five.plus(five);
         Sum sum = (Sum) result;
