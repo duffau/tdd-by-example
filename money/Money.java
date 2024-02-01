@@ -17,7 +17,7 @@ public class Money {
     }
     
     Money times(int multiplier) {
-        return new Money(amount * multiplier);
+        return new Money(amount * multiplier, currency);
     }
     
     
