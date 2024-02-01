@@ -12,7 +12,7 @@ public class Money {
         return currency;
     }
     
-    public equals(Object object) {
+    public boolean equals(Object object) {
         Money money = (Money) object;
         return amount == money.amount && currency() == money.currency();
     }
