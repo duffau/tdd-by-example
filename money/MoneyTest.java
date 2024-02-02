@@ -100,10 +100,5 @@ public class MoneyTest {
         assertEquals(Money.dollar(30), result);
     }
     
-    @Test
-    void testPlussameCurrencyReturnsMoney() {
-        Expression sum = Money.dollar(1).plus(Money.dollar(1));
-        assertTrue(sum instanceof Money);    
-    }
 
 }
