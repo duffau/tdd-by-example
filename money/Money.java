@@ -1,6 +1,7 @@
 interface Expression {
     Money reduce(Bank bank, String to);
     Expression plus(Expression addend);
+    Expression times(Expression multiplier);
 }
 
 public class Money implements Expression {
@@ -34,7 +35,7 @@ public class Money implements Expression {
         return new Money(amount, "CHF");
     }
     
-    Expression times(int multiplier) {
+    public Expression times(int multiplier) {
         return new Money(amount * multiplier, currency);
     }
     
