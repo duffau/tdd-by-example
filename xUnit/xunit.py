@@ -13,6 +13,13 @@ class TestCase:
         method = getattr(self, self.name)
         method()
         self.tearDown()
+        return TestResult()
+
+
+class TestResult:
+
+    def summary(self):
+        return "1 run, 0 failed"
 
 
 class WasRun(TestCase):
