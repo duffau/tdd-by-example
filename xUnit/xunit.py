@@ -1,10 +1,11 @@
 class TestCase:
-    pass
+    def __init__(self, name):
+        self.name = name
 
 class WasRun(TestCase):
     def __init__(self, name):
+        super().__init__(name)
         self.wasRun = None
-        self.name = name
     
     def testMethod(self):
         self.wasRun = 1
