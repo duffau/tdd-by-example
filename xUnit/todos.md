@@ -7,5 +7,5 @@
 - Run multiple tests
 - Report collected results
 - ~~Log string in WasRun~~
-
+- Report failed tests
  
