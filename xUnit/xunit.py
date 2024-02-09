@@ -14,3 +14,4 @@ class WasRun(TestCase):
 
     def testMethod(self):
         self.wasRun = 1
+        self.wasSetUp = 1
