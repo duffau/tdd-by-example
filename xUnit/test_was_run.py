@@ -1,6 +1,6 @@
-import xunit as xu
+from xunit import WasRun
 
-test = xu.WasRun("testMethod")
+test = WasRun("testMethod")
 print(test.wasRun)
-test.testMethod()
+test.run()
 print(test.wasRun)
