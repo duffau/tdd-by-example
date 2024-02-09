@@ -1,1 +1,1 @@
-python test_was_run.py
+python test_xunit.py
