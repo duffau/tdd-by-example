@@ -53,11 +53,9 @@ class WasRun(TestCase):
         super().__init__(name)
 
     def setUp(self):
-        self.wasRun = None
         self.log = "setUp "
 
     def testMethod(self):
-        self.wasRun = 1
         self.log += "testMethod "
 
     def testBrokenMethod(self):
