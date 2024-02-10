@@ -16,7 +16,7 @@ class TestCaseTest(TestCase):
     def testTemplateBrokenMethod(self):
         test = WasRun("testBrokenMethod")
         test.run(self.result)
-        assert test.log == "setUp testMethod tearDown "
+        assert test.log == "setUp testBrokenMethod tearDown "
 
     def testResult(self):
         test = WasRun("testMethod")
