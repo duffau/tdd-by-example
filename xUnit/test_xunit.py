@@ -1,3 +1,5 @@
+import traceback
+
 from xunit import TestCase, WasRun, TestResult
 
 
@@ -27,5 +29,9 @@ class TestCaseTest(TestCase):
 
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
-TestCaseTest("testFailedResult").run()
+try:
+    TestCaseTest("testFailedResult").run()
+except Exception as e:
+    traceback.print_exc()
+
 TestCaseTest("testFailedResultFormatting").run()
