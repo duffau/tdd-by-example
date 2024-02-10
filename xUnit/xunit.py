@@ -27,7 +27,8 @@ class TestCase:
             method()
         except Exception:
             result.testFailed()
-        self.tearDown()
+        finally:
+            self.tearDown()
         return result
 
 
@@ -60,6 +61,7 @@ class WasRun(TestCase):
         self.log += "testMethod "
 
     def testBrokenMethod(self):
+        self.log += "testBrokenMethod "
         raise Exception
 
     def tearDown(self):
