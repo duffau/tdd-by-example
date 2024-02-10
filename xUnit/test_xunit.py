@@ -13,6 +13,11 @@ class TestCaseTest(TestCase):
         test.run(self.result)
         assert test.log == "setUp testMethod tearDown "
 
+    def testTemplateBrokenMethod(self):
+        test = WasRun("testBrokenMethod")
+        test.run(self.result)
+        assert test.log == "setUp testMethod tearDown "
+
     def testResult(self):
         test = WasRun("testMethod")
         test.run(self.result)
@@ -35,12 +40,14 @@ class TestCaseTest(TestCase):
         suite.run(self.result)
         assert "2 run, 1 failed" == self.result.summary()
 
+
 suite = TestSuite()
 suite.add(TestCaseTest("testTemplateMethod"))
 suite.add(TestCaseTest("testResult"))
 suite.add(TestCaseTest("testFailedResult"))
 suite.add(TestCaseTest("testFailedResultFormatting"))
 suite.add(TestCaseTest("testSuite"))
+suite.add(TestCaseTest("testTemplateBrokenMethod"))
 result = TestResult()
 suite.run(result)
 print(result.summary())
