@@ -29,9 +29,5 @@ class TestCaseTest(TestCase):
 
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
-try:
-    TestCaseTest("testFailedResult").run()
-except Exception as e:
-    traceback.print_exc()
-
+TestCaseTest("testFailedResult").run()
 TestCaseTest("testFailedResultFormatting").run()
