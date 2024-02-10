@@ -1,15 +1,18 @@
 class TestSuite:
-    def __init__(self, testCase=None):
+    def __init__(self, testCase):
         self.tests = []
-        if testCase:
-            self._add_from(testCase)
+        self._add_from(testCase)
 
     def _add_from(self, testCase):
-        test_method_names = [method_name for method_name in dir(testCase) if method_name.startswith("test")]
+        test_method_names = [
+            method_name
+            for method_name in dir(testCase)
+            if method_name.startswith("test")
+        ]
         for method_name in test_method_names:
-            self.add(testCase(method_name))
+            self._add(testCase(method_name))
 
-    def add(self, test):
+    def _add(self, test):
         self.tests.append(test)
 
     def run(self, result):
